@@ -10,3 +10,4 @@ runs:
   steps:
     - run: |
         echo "config-path: ${{ inputs.config-path }}"
+      shell: bash

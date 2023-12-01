@@ -1,0 +1,16 @@
+name: "Print Username - reusable"
+
+on:
+  workflow_call:
+    inputs:
+      config-path:
+        required: true
+        type: string
+
+jobs:
+  print_username:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo config path
+        run: |
+          echo "config-path: ${{ inputs.config-path }}"

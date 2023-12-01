@@ -1,0 +1,11 @@
+name: "Print Username"
+
+on: workflow_dispatch
+
+jobs:
+  print_username:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./.github/workflows/reusable
+        with:
+          config-path: 'this is a test!'
